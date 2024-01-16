@@ -140,9 +140,7 @@
     font-weight: 500;
     color: white;
     background-color: transparent;
-    border-style: thin;
-    border-width: 1px;
-    border-color: white;
+    border: 1px solid black;
     line-height: 25.83px;
     width: 256px;
     margin-left: 77px;
