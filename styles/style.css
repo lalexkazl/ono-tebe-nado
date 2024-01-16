@@ -1,5 +1,5 @@
 /* место для вашего кода */
-@import url('../fonts/fonts.css');
+
 
 /* Блок header */
 .header{
@@ -33,7 +33,7 @@
     list-style: none;
 }
 .header__link{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -43,12 +43,10 @@
     text-decoration: none;
 }
 .header_logo{
-    width: 148px;
-    height: 105px;
+    width: 135px;
 }
 
 .address{
-    /* justify-self: end; */
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -79,36 +77,37 @@
 
 }
 .cover__title{
-    height: 520px;
     width: 1100px;
-    padding: 165px 50px 0;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 100px;
     font-weight: 700;
     color: white;
     display: flex;
+    flex-direction: column;
     letter-spacing: 0.3em;
     z-index: 3;
     position: relative;
+    text-transform: uppercase;
+    
 }
 .aligned-text{
-    align-self: start;
-    justify-self: start;
-    position: absolute;
+    margin-top: 165px;
+    margin-left: 50px;
+    line-height: 115px;
+    overflow-wrap: break-word;
+    width: 100%;
 }
 .aligned-text_center{
-    align-self: center;
-    justify-self: center;
-    position: absolute;
-    left: 336px;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left: 336px;
+    line-height: 100px;
+    overflow-wrap: break-word;
 }
 .aligned-text_right{
-    align-self: end;
-    justify-self: end;
-    position: absolute;
-    left: 633px;
-    margin-bottom: -10px;
+    margin-left: 633px;
+    margin-top: 20px;
+    line-height: 100px;
+    overflow-wrap: break-word;
 }
 .letter-spacing-extended{
     letter-spacing: 0.6em;
@@ -125,7 +124,7 @@
 }
 .cover__description-text{
     width: 635px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-weight: 400;
     color: white;
@@ -136,28 +135,29 @@
     text-transform: uppercase;
 }
 .bet-button{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-weight: 500;
     color: white;
     background-color: transparent;
+    border-style: thin;
     border-width: 1px;
     border-color: white;
-    height: 51px;
-    line-height: 28px;
+    line-height: 25.83px;
     width: 256px;
     margin-left: 77px;
-    padding: 11px 31px;
+    padding: 12px 32px 11px 31px;
 }
 
 /* Блок lots */
 .lots{
     margin: 179px 24px 0;
-    height: 692px;
     width: 1052px;
+    display: flex;
+    flex-direction: column;
 }
 .lots__heading {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-weight: 700;
     color: black;
@@ -195,16 +195,17 @@
     justify-content: space-between;
 }
 .card__title {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
+    text-decoration: underline;
     z-index: 3;
     line-height: 26.4px;
 }
 .card__text {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: white;
@@ -212,13 +213,14 @@
     line-height: 24px;
 }
 .lots__look-more-link {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: black;
     line-height: 23.48px;
-    position: relative;
-    bottom: -30px;
+    /* position: relative; */
+    /* bottom: -30px; */
+    margin-top: 30px;
     margin-left: 40px;
     text-underline-offset: 5px;
     text-decoration-thickness: 1px;
@@ -236,7 +238,6 @@
 /* Блок about */
 .about {
     width: 1052px;
-    height: 595px;
     margin: 146px 24px 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -262,7 +263,7 @@
     height: 114px;
 }
 .about__title {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-weight: 700;
     color: black;
@@ -271,7 +272,7 @@
     margin-bottom: 101px;
 }
 .about__text {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: black;
@@ -283,19 +284,22 @@
 /* Блок footer */
 .footer{
     width: 1052px;
-    height: 105px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: 1fr;
     margin: 178px 25px 91px; 
-    /* background-color: rgb(0 0 0 / 0.6); */
     justify-content: space-between;
     padding-left: 25px;
     padding-right: 25px;
 }
+.header__address{
+    align-self: start;
+    line-height: 1.4;
+    font-style: normal;
+    text-underline-offset: 5px;
+}
 .footer__menu {
     width: 149px;
-    height: 64px;
 
 }
 .footer__menu-list {
@@ -310,7 +314,7 @@
 }
 .footer__menu-link {
     line-height: 21px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: black;
@@ -321,7 +325,6 @@
 }
 .footer__social-list{
     width: 240px;
-    height: 48px;
     display: flex;
     justify-self: end;
     column-gap: 48px;
