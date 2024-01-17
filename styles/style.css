@@ -166,8 +166,10 @@
     display: flex;
     flex-grow: 1;
     column-gap: 25px;
+    row-gap: 25px;
     margin-top: 27px;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .lots__card-list-item {
     width: 334px;
