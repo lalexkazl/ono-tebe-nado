@@ -121,7 +121,7 @@
     margin-top: 135px;
     width: 100%;
     z-index: 3;
-    text-transform: uppercase;
+    
 }
 .cover__description-text{
     width: 635px;
@@ -146,6 +146,7 @@
     width: 256px;
     margin-left: 77px;
     padding: 12px 32px 11px 31px;
+    text-transform: uppercase;
 }
 
 /* Блок lots */
